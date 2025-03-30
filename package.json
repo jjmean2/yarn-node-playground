@@ -1,4 +1,29 @@
 {
   "name": "node-yarn-playground-app",
-  "packageManager": "yarn@4.8.0"
+  "type": "module",
+  "packageManager": "yarn@4.8.0",
+  "scripts": {
+    "build": "tsc -b tsconfig.build.json",
+    "check-type": "tsc --noEmit",
+    "lint": "eslint --fix",
+    "check-lint": "eslint",
+    "lint-inspect-config": "eslint --inspect-config",
+    "lint-print-config": "eslint --print-config",
+    "format": "prettier . --write",
+    "check-format": "prettier . --check"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "@types/node": "^22.13.14",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "jiti": "^2.4.2",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.28.0"
+  }
 }
