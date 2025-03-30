@@ -10,7 +10,8 @@
     "lint-inspect-config": "eslint --inspect-config",
     "lint-print-config": "eslint --print-config",
     "format": "prettier . --write",
-    "check-format": "prettier . --check"
+    "check-format": "prettier . --check",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@eslint/js": "^9.23.0",
@@ -25,5 +26,8 @@
     "prettier": "^3.5.3",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.28.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
