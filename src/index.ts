@@ -1,7 +1,4 @@
-async function main(
-  url: string,
-  options: 'compression-stream' | 'blob' | 'node-buffer' = 'node-buffer',
-) {
+async function main(url: string, options: 'compression-stream' | 'node-buffer' = 'node-buffer') {
   const response = await fetch(url)
   if (response.body === null) {
     return
@@ -23,7 +20,7 @@ async function main(
   }
 }
 
-main('https://jsonplaceholder.typicode.com/todos/1')
+main('https://jsonplaceholder.typicode.com/todos/1', 'node-buffer')
 
 // 예제 사용법
 // fetch('https://jsonplaceholder.typicode.com/todos/1', {
