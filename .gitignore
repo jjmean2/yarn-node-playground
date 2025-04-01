@@ -20,7 +20,7 @@ dist
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
-!.vscode/task.json
+!.vscode/tasks.json
 !.vscode/launch.json
 
 *.tsbuildinfo

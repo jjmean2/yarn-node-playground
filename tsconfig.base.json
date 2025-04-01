@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     // language and environment
-    "target": "ES2015",
+    "target": "ES2017",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "jsx": "preserve",
     // modules
@@ -26,6 +26,6 @@
 
     // type checking
     "strict": true,
-    "noUncheckedIndexedAccess": true,
-  },
+    "noUncheckedIndexedAccess": true
+  }
 }

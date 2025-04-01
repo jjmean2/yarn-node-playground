@@ -3,6 +3,7 @@
   "type": "module",
   "packageManager": "yarn@4.8.0",
   "scripts": {
+    "start": "tsx src/index.ts",
     "build": "tsc -b tsconfig.build.json",
     "check-type": "tsc --noEmit",
     "lint": "eslint --fix",
@@ -24,6 +25,7 @@
     "jiti": "^2.4.2",
     "lint-staged": "^15.5.0",
     "prettier": "^3.5.3",
+    "tsx": "^4.19.3",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.28.0"
   },

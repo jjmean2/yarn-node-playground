@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "command": "yarn tsx ${file}",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "execute current file",
+      "detail": "yarn tsx ${file}"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "npm: build",
+      "detail": "tsc -b tsconfig.build.json"
+    }
+  ]
+}
